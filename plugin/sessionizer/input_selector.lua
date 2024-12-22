@@ -42,6 +42,8 @@ local function on_selection(cfg, window, pane, id, label)
         act.SwitchToWorkspace({ name = id, spawn = { cwd = id } }),
         pane
     )
+
+    cfg.on_workspace_open(cfg, window, pane, id, label)
 end
 
 input_selector.get = function(cfg, entries)

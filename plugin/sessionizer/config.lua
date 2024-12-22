@@ -47,6 +47,7 @@ config.default_config = {
         exclude = { "node_modules" }
     },
     experimental_branches = false,
+    on_workspace_open = function() end
 }
 
 config.get_effective_config = function(user_config)
